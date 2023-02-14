@@ -2,8 +2,6 @@
 # produce extention based on existing yearly forcing files
 # find time index; copy file; correct time stamp
 
-set -x
-
 # Path to foring files 
 #arcm=MARv3.12
 #gcmscen=ACCESS1.3-rcp85
@@ -12,10 +10,10 @@ set -x
 
 fpath=/projects/NS8085K/PROTECT/Forcing/${arcm}/${arealm}/${gcmscen}/${avar}
 # output path
-extpath=/projects/NS8085K/PROTECT/Forcing/${arcm}/${arealm}/${gcmscen}_ext10/${avar}
+extpath=/projects/NS8085K/PROTECT/Forcing/${arcm}/${arealm}/${gcmscen}_2500ext10/${avar}
 
 # File with shuffel indicies
-shuffel_file=time_indices_2101-2300_ext10_v1.nc
+shuffel_file=time_indices_2301-2500_ext10_v1.nc
 
 # Create dir for extension
 mkdir -p ${extpath}

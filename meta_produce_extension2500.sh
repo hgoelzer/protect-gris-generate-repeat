@@ -47,15 +47,16 @@ set -e
 arcm=MARv3.9
 gcmscen=UKESM1-0-LL-Robin-ssp585
 
+
 # run all variables for given model 
 arealm=dSMB
 avar=aSMB
-. ./produce_extension_src.sh
+. ./produce_extension2500_src.sh
 avar=dSMBdz
-. ./produce_extension_src.sh
+. ./produce_extension2500_src.sh
 
 arealm=dST
 avar=aST
-. ./produce_extension_src.sh
+. ./produce_extension2500_src.sh
 avar=dSTdz
-. ./produce_extension_src.sh
+. ./produce_extension2500_src.sh
